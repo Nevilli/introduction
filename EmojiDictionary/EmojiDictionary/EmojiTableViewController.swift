@@ -10,6 +10,8 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
     
+    
+    
     var emojis: [Emoji] = [
         Emoji(symbol: "😀", name: "Grinning Face", description: "A typical smiley face", usage: "happiness"),
         Emoji(symbol: "😕", name: "Confused Face", description: "A confused, puzzled face", usage: "unsure what to think; displeasure"),
@@ -52,6 +54,7 @@ class EmojiTableViewController: UITableViewController {
         }
     }
 
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
@@ -63,22 +66,29 @@ class EmojiTableViewController: UITableViewController {
 
         return cell
     }
+ 
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let emoji = emojis[indexPath.row]
         print("\(emoji.symbol) \(indexPath)")
     }
     
-
-    /*
+    @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
+        let tableViewEditingMode = tableView.isEditing
+        
+        tableView.setEditing(!tableViewEditingMode, animated: true)
+    }
+    
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
+   
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -88,24 +98,27 @@ class EmojiTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
-    /*
+    
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+        let movedEmoji = emojis.remove(at: fromIndexPath.row)
+            emojis.insert(movedEmoji, at: to.row)
+            tableView.reloadData()
 
     }
-    */
+    
 
-    /*
+    
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
-    */
+   
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -113,6 +126,6 @@ class EmojiTableViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
