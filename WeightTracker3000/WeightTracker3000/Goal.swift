@@ -11,13 +11,19 @@ import Foundation
 struct Goal: Codable {
     var goal: Int
     var current: Double
+    var weights = [Double]()
 
+    init(goal:Int, current: Double) {
+        self.goal = goal
+        self.current = current
+        self.weights.append(self.current)
+    }
     static let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     static let saveURL = documentsDirectory.appendingPathExtension("Goal_file").appendingPathExtension("plist")
     
-    static func saveToFile(weights: Goal) {
+    static func saveToFile(values: Goal)  {
         let propertyListEncoder = PropertyListEncoder()
-        let encodedGoal = try? propertyListEncoder.encode(weights)
+        let encodedGoal = try? propertyListEncoder.encode(values)
         try? encodedGoal?.write(to: saveURL, options: .noFileProtection)
     }
     

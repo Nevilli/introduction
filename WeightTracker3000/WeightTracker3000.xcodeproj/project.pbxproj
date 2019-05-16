@@ -15,6 +15,7 @@
 		8A58F6732289A363004CFC8B /* WeightTracker3000Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58F6722289A363004CFC8B /* WeightTracker3000Tests.swift */; };
 		8A58F67E2289A363004CFC8B /* WeightTracker3000UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58F67D2289A363004CFC8B /* WeightTracker3000UITests.swift */; };
 		8A80B1592289AD090083E563 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A80B1582289AD090083E563 /* Goal.swift */; };
+		8AFF8D29228DDBB700680981 /* CurrentWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF8D28228DDBB700680981 /* CurrentWeightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8A58F67D2289A363004CFC8B /* WeightTracker3000UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTracker3000UITests.swift; sourceTree = "<group>"; };
 		8A58F67F2289A363004CFC8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A80B1582289AD090083E563 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		8AFF8D28228DDBB700680981 /* CurrentWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				8A80B1582289AD090083E563 /* Goal.swift */,
 				8A58F6662289A363004CFC8B /* LaunchScreen.storyboard */,
 				8A58F6612289A361004CFC8B /* Main.storyboard */,
+				8AFF8D28228DDBB700680981 /* CurrentWeightViewController.swift */,
 				8A58F6642289A363004CFC8B /* Assets.xcassets */,
 				8A58F6692289A363004CFC8B /* Info.plist */,
 			);
@@ -261,6 +264,7 @@
 			files = (
 				8A58F6602289A361004CFC8B /* ViewController.swift in Sources */,
 				8A80B1592289AD090083E563 /* Goal.swift in Sources */,
+				8AFF8D29228DDBB700680981 /* CurrentWeightViewController.swift in Sources */,
 				8A58F65E2289A361004CFC8B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R55TAZDAT;
 				INFOPLIST_FILE = WeightTracker3000/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R55TAZDAT;
 				INFOPLIST_FILE = WeightTracker3000/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
