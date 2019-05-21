@@ -1,18 +1,17 @@
 //
-//  CurrentWeightViewController.swift
+//  WeightViewController.swift
 //  WeightTracker3000
 //
-//  Created by Lliam on 5/16/19.
+//  Created by Lliam on 5/21/19.
 //  Copyright © 2019 Lliam. All rights reserved.
 //
 
 import UIKit
 
-class CurrentWeightViewController: UIViewController {
-    
+class WeightViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         // Do any additional setup after loading the view.
     }

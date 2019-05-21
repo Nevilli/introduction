@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A13AEBB229426570089E01A /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13AEBA229426570089E01A /* WeightViewController.swift */; };
 		8A58F65E2289A361004CFC8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58F65D2289A361004CFC8B /* AppDelegate.swift */; };
 		8A58F6602289A361004CFC8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58F65F2289A361004CFC8B /* ViewController.swift */; };
 		8A58F6632289A361004CFC8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A58F6612289A361004CFC8B /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A13AEBA229426570089E01A /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		8A58F65A2289A361004CFC8B /* WeightTracker3000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightTracker3000.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A58F65D2289A361004CFC8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A58F65F2289A361004CFC8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				8A80B1582289AD090083E563 /* Goal.swift */,
 				8A58F6662289A363004CFC8B /* LaunchScreen.storyboard */,
 				8A58F6612289A361004CFC8B /* Main.storyboard */,
+				8A13AEBA229426570089E01A /* WeightViewController.swift */,
 				8AFF8D28228DDBB700680981 /* CurrentWeightViewController.swift */,
 				8A58F6642289A363004CFC8B /* Assets.xcassets */,
 				8A58F6692289A363004CFC8B /* Info.plist */,
@@ -266,6 +269,7 @@
 				8A80B1592289AD090083E563 /* Goal.swift in Sources */,
 				8AFF8D29228DDBB700680981 /* CurrentWeightViewController.swift in Sources */,
 				8A58F65E2289A361004CFC8B /* AppDelegate.swift in Sources */,
+				8A13AEBB229426570089E01A /* WeightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
