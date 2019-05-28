@@ -13,12 +13,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentWeight: UITextField!
     @IBOutlet weak var goalWeight: UITextField!
     
+    var newGoal: Goal?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let goal = Goal.loadFromFile() {
+            newGoal = goal
+            performSegue(withIdentifier: "CurrentWeight", sender: Any?.self)
+        }
     }
     
     @IBAction func checkAndMoveOn(_ sender: UIButton) {
-        var newGoal: Goal
+        
         
         if let current = Double(currentWeight.text!) {
             if let goalLbs = Int(goalWeight.text!) {
@@ -42,7 +48,11 @@ class ViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        let destination = segue.destination as! CurrentWeightViewController
+        if segue.identifier == "CurrentWeight" {
+            let destination = segue.destination as! CurrentWeightViewController
+            destination.currentGoal = newGoal
+        }
+        
     }
     
 }

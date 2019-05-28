@@ -24,7 +24,7 @@
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="checkAndMoveOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dfl-af-uy5"/>
-                                    <segue destination="hpj-aJ-mtq" kind="show" id="gqe-iD-dMF"/>
+                                    <segue destination="hpj-aJ-mtq" kind="show" identifier="CurrentWeight" id="gqe-iD-dMF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Current Weight (lbs)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCf-j8-9TK">
@@ -78,11 +78,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b8-4d-3zy">
-                                <rect key="frame" x="156" y="531" width="62" height="30"/>
+                                <rect key="frame" x="170" y="531" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Continue"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
-                                    <segue destination="zph-b1-96V" kind="show" id="tVQ-Gx-klO"/>
+                                    <action selector="saveCurrentWeight:" destination="hpj-aJ-mtq" eventType="touchUpInside" id="17N-AZ-dFb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Current Weight (lbs)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmE-Xd-3jR">
@@ -103,25 +103,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7ex-g7-AdH"/>
                     </view>
+                    <connections>
+                        <outlet property="currentWeight" destination="DvM-DR-9DO" id="xyJ-Cj-eLU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRL-rr-qfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="473" y="134"/>
-        </scene>
-        <!--Weight View Controller-->
-        <scene sceneID="p5m-JJ-Xxg">
-            <objects>
-                <viewController id="zph-b1-96V" customClass="WeightViewController" customModule="WeightTracker3000" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3Qk-d6-MjA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="27U-77-AvF"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aNc-GY-dPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1294" y="134"/>
+            <point key="canvasLocation" x="472.80000000000001" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1WI-qk-i4d">

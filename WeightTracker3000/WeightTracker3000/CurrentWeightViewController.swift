@@ -9,10 +9,22 @@
 import UIKit
 
 class CurrentWeightViewController: UIViewController {
+    @IBOutlet weak var currentWeight: UITextField!
+    @IBAction func saveCurrentWeight(_ sender: UIButton) {
+        if let current = Double(currentWeight.text!) {
+            currentGoal!.weights.append(current)
+        }
+    Goal.saveToFile(values: currentGoal!)
+        
+        
+    }
+    
+    
+    var currentGoal: Goal?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(currentGoal!.goal)
 
         // Do any additional setup after loading the view.
     }
